@@ -5,9 +5,10 @@
   top: 0;
   left: 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 200px 1fr;
   align-items: center;
   z-index: 2;
+  padding: 10px;
   transition: 0.5s ease-in-out;
 }
 #navWrapper.active {
@@ -17,14 +18,49 @@
   font-size: 45px;
   padding: 0 20%;
   align-items: center;
-  justify-self: start;
-  background-color: yellow;
+  justify-self: center;
+}
+
+#navWrapper .navLinks {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
 }
 
 #navWrapper .navLinks ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  justify-self: end;
-  background-color: rosybrown;
+  align-items: start;
+}
+#navWrapper .navLinks ul li:nth-child(3) {
+  justify-self: center;
+}
+
+#navWrapper .navLinks ul li a {
+  font-size: 18px;
+}
+
+#navWrapper .outerNavLinks {
+  position: fixed;
+  right: 30px;
+  top: 100px;
+  padding: 10px;
+  background: rgba(200, 218, 166, 0.737);
+  border-radius: 5%;
+}
+
+#navWrapper .outerNavLinks ul li {
+  margin: 10px;
+  text-align: center;
+}
+#navWrapper .outerNavLinks ul li:nth-child(1) {
+  text-align: end;
+}
+#navWrapper .outerNavLinks ul li a {
+  font-size: 18px;
+}
+#navWrapper .outerNavLinks ul li:nth-child(4) a {
+  color: rgba(128, 128, 128, 0.71);
+  font-size: 14px;
+  margin: 10px;
 }
