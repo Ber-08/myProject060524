@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 150px 1fr;
   align-items: center;
   z-index: 2;
   padding: 10px;
@@ -14,11 +14,12 @@
 #navWrapper.active {
   background-color: rgb(200, 218, 166);
 }
+
 #navWrapper .logo {
   font-size: 45px;
   padding: 0 20%;
   align-items: center;
-  justify-self: center;
+  justify-self: start;
 }
 
 #navWrapper .navLinks {
@@ -29,11 +30,13 @@
 
 #navWrapper .navLinks ul {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: 100px 100px auto;
   align-items: start;
 }
+
 #navWrapper .navLinks ul li:nth-child(3) {
-  justify-self: center;
+  justify-self: end;
 }
 
 #navWrapper .navLinks ul li a {
@@ -45,8 +48,10 @@
   right: 30px;
   top: 100px;
   padding: 10px;
-  background: rgba(200, 218, 166, 0.737);
+  /* background-color: rgba(200, 218, 166, 0.737); */
+  background-color: transparent;
   border-radius: 5%;
+  border: 3px rgba(200, 218, 166, 0.737) solid;
 }
 
 #navWrapper .outerNavLinks ul li {
@@ -63,4 +68,9 @@
   color: rgba(128, 128, 128, 0.71);
   font-size: 14px;
   margin: 10px;
+}
+
+#navWrapper .outerNavLinks .dark-icon,
+#navWrapper .outerNavLinks .split {
+  color: #fff;
 }
