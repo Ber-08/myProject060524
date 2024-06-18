@@ -10,9 +10,6 @@ const Home = () => {
       <h1 className="home">Home Page</h1>
       <h1 className="home">Home Page</h1>
       <h1 className="home">Home Page</h1>
-      {/* <h1 className="home">Home Page</h1>
-      <h1 className="home">Home Page</h1>
-      <h1 className="home">Home Page</h1> */}
     </div>
   );
 };
